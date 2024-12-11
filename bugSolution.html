@@ -1,0 +1,6 @@
+```html
+<div class="p-4 rounded-lg shadow-lg" style="background-image: linear-gradient(to right, #5091e6, #9b59b6);">
+  <!-- Content here -->
+</div>
+```
+This solution uses inline styles to explicitly define the gradient. This ensures that it will work even in older browsers that lack native support for Tailwind's gradient syntax.  We also use hex color codes which provide better compatibility than Tailwind's named colors in some older browsers. Consider adding a feature detection mechanism if you need to support a wide range of very old browsers.
